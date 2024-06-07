@@ -438,7 +438,6 @@ plt.legend()
 plt.grid()
 plt.show()
 ```
-![Exercise 2,Graph 1](exercise2graph1.png)
 
 The code below is the function that calculates the maximum height and range of a soccer ball launched at a given angle with the given average  professional kick velocity, $30 \frac{m}{s}$ with drag and no wind. The code to plot the model has been omitted from this report because is quite similar to that above for the model with no drag.
 
@@ -461,8 +460,6 @@ for launch_angle in launch_angles:
     max_ranges.append(max_range)
     max_heights.append(max_height)
 ```
-![Exercise 2,Graph 2](exercise2graph1.png)
-
 
 and below is the function that calculates the maximum height and range of a soccer ball launched at a given angle with the given average  professional kick velocity, $30 \frac{m}{s}$ with drag **and** wind, as well as the code to plot it. This example gives five differnt wind conditions to demonstrate it's effect. The arrowgrid in the following plots indicate the direction and magnitude of the wind. The plotting code has been included because this plotting method is unique to the former models.
 
@@ -831,7 +828,7 @@ def new_find_launch_angle(x0 = 0,
     return
 ```
 
-The code above attempts to basically simulate many angles until they are within a certain tolerance of the target distance and height for Mia's head.  It is computationally intensive, and I am sure there is a better way to do it, but it works. The time to compute increases as the tolerance decreases. So the more accurate results desired, the less long it will take to calculate. The results are found in section 4.3.
+The code above attempts to  simulate many angles until they are within a certain tolerance of the target distance and height for Mia's head.  It is computationally intensive, and I am sure there is a better way to do it, but it works. The time to compute increases as the tolerance decreases. So the more accurate results desired, the less long it will take to calculate. The results are found in section 4.3.
 
 A quick run through of the code:
 
@@ -883,29 +880,29 @@ The following subsections will contain the the results and analysis of of the re
 
 ### 4.1: Exercise 1
 
-![Exercise 1,Graph 1](exercise1fig1.png) 
+![Exercise 1,Graph 1](images/exercise1fig1.png) 
 > Figure 4.1.1: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of 30 $\frac{m}{s}$ with $5 \frac{m}{s}$ of horizontal wind at $180^\circ$ (or $-5\frac{m}{s}$ of wind at $0^\circ$) and no vertical wind.
 
-![Exercise 1,Graph 2](exercise1fig2.png)
+![Exercise 1,Graph 2](images/exercise1fig2.png)
 > Figure 4.1.2: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of $30 \frac{m}{s}$ with $1 \frac{m}{s}$ of wind at $180^\circ$ (or $-1\frac{m}{s}$ of wind at $0^\circ$)
 
-![Exercise 1,Graph 3](exercise1fig3.png)
+![Exercise 1,Graph 3](images/exercise1fig3.png)
 > Figure 4.1.3: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of 30 $\frac{m}{s}$ with no wind.
 
 
-![Exercise 1,Graph 4](exercise1fig4.png)
+![Exercise 1,Graph 4](images/exercise1fig4.png)
 > Figure 4.1.4: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of 30 $\frac{m}{s}$ with 1 $\frac{m}{s}$ of wind at $0^\circ$.
 
 
-![Exercise 1,Graph 5](exercise1fig5.png)
+![Exercise 1,Graph 5](images/exercise1fig5.png)
 > Figure 4.1.5: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of 30 $\frac{m}{s}$ with 5 $\frac{m}{s}$ of wind at $0^\circ$.
 
 
-![Exercise 1,Graph 6](exercise1fig6.png)
+![Exercise 1,Graph 6](images/exercise1fig6.png)
 > Figure 4.1.6: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of $30\frac{m}{s}$ and $5 \frac{m}{s}$ of wind at $45^\circ$
 
 
-![Exercise 1,Graph 7](exercise1fig7.png)
+![Exercise 1,Graph 7](images/exercise1fig7.png)
 > Figure 4.1.7: Trajectory of a soccer ball launched at $45^\circ$ with an initial velocity of $30\frac{m}{s}$ and $5 \frac{m}{s}$ of wind at $-45^\circ$
 
 The graphs above demonstrate the hypothesis expected of a projectile that experiences drag in different wind environments. 
@@ -922,38 +919,38 @@ Section **3.2** demonstrated the implementation of various models of the traject
 
 The first environment had no drag. The graph below shows the maximum height and range of a soccer ball launched at a given angle with the given average  professional kick velocity, $30 \frac{m}{s}$ with no drag and no wind.
 
-![Range Height Figure1](exercise2nodrag.png)
+![Range Height Figure1](images/exercise2nodrag.png)
 > Figure 4.2.1: Maximum range and height for launch angles between 0 and 90 degrees with no drag and no wind.
 
 The second environment had drag and no wind. The graph below shows the maximum height and range of a soccer ball launched at a given angle with the given average  professional kick velocity, $30 \frac{m}{s}$ with drag and no wind.
 
-![Range Height Figure2](Exercise2nowindwithdrag.png)
+![Range Height Figure2](images/Exercise2nowindwithdrag.png)
 > Figure 4.2.2: Maximum range and height for launch angles between 0 and 90 degrees with drag and no wind.
 
 The third environment had drag and wind. The following graphs below shows the maximum height and range of a soccer ball launched at a given angle with the given average  professional kick velocity, $30 \frac{m}{s}$ with drag and winds at various directions and magnitudes.
 
-![Range Height Figure3](Exercise2withwindanddrag.png)
+![Range Height Figure3](images/Exercise2withwindanddrag.png)
 >  Figure 4.2.3: Maximum range and height for launch angles between 0 and 90 degrees with drag and 5 $\frac{m}{s}$ of wind at $180^\circ$ to the ball.
 
-![Range Height Figure4](Exercise2withwindanddrag2.png)
+![Range Height Figure4](images/Exercise2withwindanddrag2.png)
 >  Figure 4.2.4: Maximum range and height for launch angles between 0 and 90 degrees with drag and 1 $\frac{m}{s}$ of wind at $180^\circ$ to the ball.
 
-![Wind Figure5](Exercise2withwindanddrag3.png)
+![Wind Figure5](images/Exercise2withwindanddrag3.png)
 > Figure 4.2.5: Maximum range and height for launch angles between 0 and 90 degrees with no drag and wind with velocity 0$\frac{m}{s}$. (notice this is the same as the graph in figure 1, just on a different scale.)
 
-![Wind Figure6](Exercise2withwindanddrag4.png)
+![Wind Figure6](images/Exercise2withwindanddrag4.png)
 >  Figure 4.2.6: Maximum range and height for launch angles between 0 and 90 degrees with drag and 1 $\frac{m}{s}$ of wind at $0^\circ$ to the ball.
 
-![Wind Figure7](Exercise2withwindanddrag5.png)
+![Wind Figure7](images/Exercise2withwindanddrag5.png)
 >  Figure 4.2.7: Maximum range and height for launch angles between 0 and 90 degrees with drag and 5 $\frac{m}{s}$ of wind at $0^\circ$ to the ball.
 
 Similar to the results discussed in **4.1**, a tailwind will increase the range and a headwind will decrease the range for a ball at any given angle. There is an exception to that headwind rule though, because as Figure **4.2.1** and **4.2.2** demonstrate, a headwind will eventually begin to increase the range of a projectile. Why is that? The following graphs will demonstrate the trajectories of soccer balls that exhibit the same behaviour as Figure **4.2.1** and **4.2.2** indicate:
 
-![Wind Figure8](Exercise2withwindanddrag6.png)
+![Wind Figure8](images/Exercise2withwindanddrag6.png)
 
 > Figure 4.2.8: Trajectory of a soccer ball launched at $90^\circ$ with an initial velocity of $30 \frac{m}{s}$ with 5 $\frac{m}{s}$ of wind at $180^\circ$ (or $-1\frac{m}{s}$ of wind at $0^\circ$)
 
-![Wind Figure9](Exercise2withwindanddrag7.png)
+![Wind Figure9](images/Exercise2withwindanddrag7.png)
 
 > Figure 4.2.9: Trajectory of a soccer ball launched at $90^\circ$ with an initial velocity of $30 \frac{m}{s}$ with 1 $\frac{m}{s}$ of wind at $180^\circ$ (or $-1\frac{m}{s}$ of wind at $0^\circ$)
 
@@ -977,29 +974,27 @@ It also contained the code to solve and plot the angles or return error messages
 Below are the results for a ball kicked from the following disances from Mia:
 
 
-![4.3.1](4-3-1.png)
+![4.3.1](images/4-3-1.png)
 > Figure 4.3.1: These conditions only have one solution
 
-![4.3.2](4-3-2.png)
+![4.3.2](images/4-3-2.png)
 > Figure 4.3.2: These conditions have two solutions
 
-![4.3.3](4-3-3.png)
+![4.3.3](images/4-3-3.png)
 > Figure 4.3.3: These conditions have two solutions
 
-![4.3.4](4-3-4.png)
+![4.3.4](images/4-3-4.png)
 > Figure 4.3.4: These conditions have two solutions
 
-![4.3.5](4-3-5.png)
+![4.3.5](images/4-3-5.png)
 > Figure 4.3.5: These conditions have two solutions
 
-
-![4.3.6](4-3-6.png)
+![4.3.6](images/4-3-6.png)
 > Figure 4.3.6: These conditions have two solutions
 
 ```python
 'no solutions, try a higher velocity. There are no solutions for distance = 100'
 ```
-> Figure 4.3.7: These conditions have no solutions
 
 The results above demonstrate the implementation of the analytical solution to the problem of finding the launch angle of a soccer ball to hit a target at a given distance. The results also demonstrate the limitations of the analytical solution.
 
@@ -1011,7 +1006,7 @@ It is important to note that in real life these distances, and launch angles are
 
 As previously stated in 2.3 and 3.3, I realized that I was not accounting for the air resistance when that is the purpose of the project. Given the time constraints I am working under, I have implemented a coded solution that I believe gives the correct angle given the conditions, however it is found through brute force and a little estimation, and not actual analytical methods. The results are found below. I want to note that Initial for the conditions shown in 4.3.8, there was an similarly a valid angle of around $17^\circ$, as well as a valid angle around $71^\circ$. Unfortunately I accidentally overrode the file so it is not shown below. However, the code is in the section 3.3.4. For the initial code that generated/would have it. 
 
-![4.3.8](foundangle1.png)
+![4.3.8](images/foundangle1.png)
 > Figure 4.3.8: This figure is an example of two angles that each have a valid trajectory to hit Mia's head on it's descent. Both angles are roughly $17^\circ$, and reach the target
 
 ## 4.3.4: Exercise 4
@@ -1019,7 +1014,7 @@ As previously stated in 2.3 and 3.3, I realized that I was not accounting for th
 
 As mentioned in **2.4** these values are only approximated and not found analytically. nevertheless, I believe that they are very reasonable values for a spoon shot. The velocity is around $11.2\frac{m}{s}$, well under the average professional kick velocity which makes sense. Similarly the trajectory is resonable, staying under $3$ meters for the entire flight. It has a lob, but the angle of around $38.22^\circ$ is not ridiculous and is certainly realistic for a spoon shot by a professional player. Below is the graph: 
 
-![4.4.1](exercise4.png)
+![4.4.1](images/exercise4.png)
 
 
 ## 5. Conclusion
